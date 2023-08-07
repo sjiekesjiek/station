@@ -46,9 +46,9 @@ getChainOptions().then((chainOptions) =>
                   </InitChains>
                 </WithNodeInfo>
               </InitNetworks>
+              {debug.query && <ReactQueryDevtools position="bottom-right" />}
             </InitQueryClient>
           </WalletProvider>
-          {debug.query && <ReactQueryDevtools position="bottom-right" />}
         </BrowserRouter>
       </RecoilRoot>
     </StrictMode>,
